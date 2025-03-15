@@ -16,6 +16,10 @@ tmux send-keys 'while true; do ssh -t gman.comroid.org "htop -s PERCENT_CPU"; sl
 
 # Split window vertically to create Panel 3 (Remote)
 tmux split-window -h
+tmux send-keys 'while true; do ssh -t vader.comroid.org "htop -s PERCENT_CPU"; sleep 1; done' C-m
+
+# Split window vertically to create Panel 3 (Remote)
+tmux split-window -v
 tmux send-keys 'while true; do ssh -t host.ampznetwork.com "htop -s PERCENT_CPU"; sleep 1; done' C-m
 
 # Split window vertically to create Panel 4 (Remote)
