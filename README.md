@@ -1,4 +1,4 @@
 # status monitor
 ```
-bash <(curl -s https://raw.githubusercontent.com/burdoto/scripts/refs/heads/master/pi/status.sh)
+bash <(curl -s https://raw.githubusercontent.com/burdoto/toolkit/refs/heads/master/scripts/pi/status.sh)
 ```
