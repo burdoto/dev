@@ -15,11 +15,11 @@ tmux new-session -d -s monitoring
 tmux send-keys 'while true; do htop -s PERCENT_CPU; sleep 1; done' C-m
 
 # Split the top panel horizontally to create Panel 5 (connects to 192.168.0.8)
-#tmux split-window -h
+tmux split-window -h
 tmux send-keys 'while true; do ssh -t gman.comroid.org "htop -s PERCENT_CPU"; sleep 1; done' C-m
 
 # Split window vertically to create Panel 3 (Remote)
-tmux split-window -h
+tmux split-window -v
 tmux send-keys 'while true; do ssh -t vader.comroid.org "htop -s PERCENT_CPU"; sleep 1; done' C-m
 
 # Split window vertically to create Panel 3 (Remote)
